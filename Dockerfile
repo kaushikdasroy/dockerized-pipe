@@ -1,4 +1,4 @@
-FROM jenkinsci/jenkins:lts
+FROM jenkins/jenkins:lts
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 COPY security.groovy /usr/share/jenkins/ref/init.groovy.d/security.groovy
 COPY seeddsl.groovy /usr/share/jenkins/seeddsl.groovy
